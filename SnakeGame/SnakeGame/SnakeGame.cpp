@@ -37,7 +37,7 @@ int main()
 	glViewport(0, 0, 1024, 768);
 
 	glBindBuffer(GL_ARRAY_BUFFER, id);
-	glBufferData(GL_ARRAY_BUFFER, (sizeof(vertices), vertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, (sizeof(vertices)), vertices, GL_STATIC_DRAW);
 
 
 	while (!glfwWindowShouldClose(window))
