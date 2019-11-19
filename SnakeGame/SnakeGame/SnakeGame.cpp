@@ -17,7 +17,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	GLFWwindow* window = glfwCreateWindow(1024, 768, "Snake", NULL, NULL);
 	unsigned int id = 0;
-	glGenBuffers(1, &id);
+	//glGenBuffers(1, &id);
 
 	float vertices[] = {
 	-0.5f, -0.5f, 0.0f,
@@ -36,8 +36,8 @@ int main()
 	//glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glViewport(0, 0, 1024, 768);
 
-	glBindBuffer(GL_ARRAY_BUFFER, id);
-	glBufferData(GL_ARRAY_BUFFER, (sizeof(vertices)), vertices, GL_STATIC_DRAW);
+	//glBindBuffer(GL_ARRAY_BUFFER, id);
+	//glBufferData(GL_ARRAY_BUFFER, (sizeof(vertices)), vertices, GL_STATIC_DRAW);
 
 
 	while (!glfwWindowShouldClose(window))

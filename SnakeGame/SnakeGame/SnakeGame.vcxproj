@@ -183,10 +183,14 @@ copy "$(SolutionDir)include\GL\bin\*.*" "$(SolutionDir)_Binary\"</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SnakeGame.cpp" />
+    <ClCompile Include="SnakePieces.cpp" />
+    <ClCompile Include="SnakeRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\OpenGL-Tutorials\shader.hpp" />
     <ClInclude Include="SnakeGame.h" />
+    <ClInclude Include="SnakePieces.h" />
+    <ClInclude Include="SnakeRenderer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
